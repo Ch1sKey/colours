@@ -1,0 +1,13 @@
+.wrap {
+	width: 1200px;
+	margin: 0 auto;
+	min-height: 800px;
+	border: 10px solid #000;
+}
+
+.object {
+	width: 600px;
+	height: 600px;
+	margin: 20px auto;
+	background: #000;
+}
