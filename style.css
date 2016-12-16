@@ -9,5 +9,21 @@
 	width: 600px;
 	height: 600px;
 	margin: 20px auto;
-	background: #000;
+	background: rgb(0,0,0);
+}
+
+button{
+	width: 17%;
+	height: 17%;
+	position: fixed;
+	left: 40;
+	top: 40;
+	font-size: 250%;
+	word-wrap: break-word;
+}
+
+button:hover{
+	background: #fff;
+	color :#000;
+	transition: 0.4s;
 }

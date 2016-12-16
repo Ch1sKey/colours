@@ -6,8 +6,48 @@
 	<link rel="stylesheet" href="style.css">
 	<script src = "jquery.js"></script>
 	<script src = "funcs.js"></script>
+	<script>
+	$(document).ready( function(){	
+		function randomRGB(obj) {
+		 var a = [];
+		var str = '';
+		 	for(var i=0; i<3; i++) {
+		 		a[i] = randomInteger(0,255);
+
+		 	}
+		 	str = "rgb("+a[0]+","+a[1]+","+a[2]+")";
+		 	obj.css("background", str)
+		}
+
+			string = $("div.object").last().attr('class');
+			string = string.split(' ');
+			g = string.length-1;
+			var str1 = string[g];
+			s1 = str1;
+				str1 = str1.split('');
+			console.log(str1);
+			var useit = [];
+			for (var i = 0; i < str1.length; i++) {
+				if(str1[i] != 'o')
+					{useit.push(str1[i])}
+			}
+var s = '';
+	$('button').on('click', function(){
+		for(var i = 0; i <= useit; i++) {
+			console.log(s1);
+			//s = "$(."+s1+")";
+			s = $(".o"+i);
+			 randomRGB(s);
+		}
+
+		 /*console.log(randomRGB($('.object'))*/
+		 });
+
+	});	
+	</script>
 </head>
 <body>
+	 	<button>REFRESH</button>
 	 <div class="wrap">
 	 	<div class="object o1"></div>
 	 	<div class="object o2"></div>
