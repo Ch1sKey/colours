@@ -39,13 +39,13 @@ var b = arr[2];
 }
 
 function getRGB(rgb) {
-                rgb = rgb.split('');
-                for(var i = 3; i>=0; i--){ rgb[i] = null;}
-                rgb[rgb.length-1] = null;
-                for (var i = 0; i < rgb.length; i++) {if(rgb[i] == ','){ rgb[i] = null;}} //Возвращает числа из строчки фотрмата rgb(255, 255, 255);
-                    rgb = arrayClear(rgb);
-                rgb = rgb.join('').split(' ');
-                return(rgb);
+rgb = rgb.split('');
+for(var i = 3; i>=0; i--){ rgb[i] = null;}
+rgb[rgb.length-1] = null;
+for (var i = 0; i < rgb.length; i++) {if(rgb[i] == ','){ rgb[i] = null;}} //Возвращает числа из строчки фотрмата rgb(255, 255, 255);
+rgb = arrayClear(rgb);
+rgb = rgb.join('').split(' ');
+return(rgb);
             }
 
 
