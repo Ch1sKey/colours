@@ -1,15 +1,26 @@
-.wrap {
-	width: 1200px;
-	margin: 0 auto;
-	min-height: 800px;
-	border: 10px solid #000;
+body {
+	height: 2000px;
 }
 
 .object {
-	width: 600px;
-	height: 600px;
-	margin: 20px auto;
+	width: 10%;
+	height: 10%;
+	float: left;
+	/*margin: 20px auto;*/
 	background: rgb(0,0,0);
+}
+
+.object:active{
+	transform: scale(1.2);
+	transition: 0.8s;
+}
+
+.object p {
+	font-size: 1.5em;
+	margin:10px 0;
+	width: 100%;
+	height: 20%;
+	text-align: center;
 }
 
 button{
