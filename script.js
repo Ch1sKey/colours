@@ -3,7 +3,8 @@
 		var str = '';
 		var s = '';
 	$(document).ready( function(){	
-	$('.object').on('dblclick', function(){
+	$('html').on('keydown', function(){
+	if(event.keyCode == 69){		
 		for(var i = 0; i <= useit; i++) {
 			console.log(s1);
 			//s = "$(."+s1+")";
@@ -11,6 +12,7 @@
 			 randomRGB(s);
 		}
 		$('.object').text('');
+	}
 	});
 		function randomRGB(obj) {
 		 	for(var i=0; i<3; i++) {
